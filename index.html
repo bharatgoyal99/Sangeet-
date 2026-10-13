@@ -4,34 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#1a0e15">
-<title>Abhishek &amp; Shipra · Wedding Festivities · 03.05</title>
-<meta name="description" content="Haldi Carnival · Cocktail & Sangeet · 3rd May · Radisson RED, Mohali">
+<title>Bharat Goyal &amp; Isha Bansal · Sangeet Ceremony</title>
+<meta name="description" content="Sangeet Ceremony · Monday, 23rd November 2026 · The Lauriant Resorts, Patiala, Punjab">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://abhishekwithshipra.github.io/Functions/">
-<meta property="og:title" content="Abhishek & Shipra · Wedding Festivities">
-<meta property="og:description" content="Haldi Carnival · Cocktail & Sangeet · 3rd May · Radisson RED, Mohali">
+<meta property="og:title" content="Bharat Goyal & Isha Bansal · Sangeet Ceremony">
+<meta property="og:description" content="Sangeet Ceremony · Monday, 23rd November 2026 · The Lauriant Resorts, Patiala, Punjab">
 <meta property="og:image" content="https://abhishekwithshipra.github.io/Functions/preview.jpg">
 <meta property="og:image:secure_url" content="https://abhishekwithshipra.github.io/Functions/preview.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Abhishek & Shipra · 3rd May · Radisson RED">
-<meta property="og:site_name" content="Abhishek & Shipra">
+<meta property="og:image:alt" content="Bharat Goyal & Isha Bansal · 3rd May · Radisson RED">
+<meta property="og:site_name" content="Bharat Goyal & Isha Bansal">
 
 <!-- WhatsApp specifically uses these -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Abhishek & Shipra · Wedding Festivities">
-<meta name="twitter:description" content="Haldi Carnival · Cocktail & Sangeet · 3rd May">
+<meta name="twitter:title" content="Bharat Goyal & Isha Bansal · Sangeet Ceremony">
+<meta name="twitter:description" content="Sangeet Ceremony · Monday, 23rd November 2026 · The Lauriant Resorts, Patiala, Punjab">
 <meta name="twitter:image" content="https://abhishekwithshipra.github.io/Functions/preview.jpg">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Abhishek & Shipra · Wedding Festivities">
-<meta name="twitter:description" content="Haldi Carnival · Cocktail & Sangeet · 3rd May · Radisson RED, Mohali">
+<meta name="twitter:title" content="Bharat Goyal & Isha Bansal · Sangeet Ceremony">
+<meta name="twitter:description" content="Sangeet Ceremony · Monday, 23rd November 2026 · The Lauriant Resorts, Patiala, Punjab">
 <meta name="twitter:image" content="https://i.ibb.co/1tcnKLRL/preview-3.jpg" />
-<meta name="twitter:image:alt" content="Abhishek & Shipra · 3rd May · Radisson RED, Mohali">
+<meta name="twitter:image:alt" content="Bharat Goyal & Isha Bansal · 3rd May · Radisson RED, Mohali">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30;1,9..144,300..700,100&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Allura&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
@@ -647,7 +647,7 @@ section{position:relative;overflow:hidden;padding:0 28px}
   0%{opacity:.7}
   100%{opacity:1}
 }
-.dress-info{flex:1}
+.dress-info{flex:1;min-width:0;overflow:visible;overflow-wrap:anywhere}
 .dress-info h3{
   font-family:'Fraunces',serif;
   font-variation-settings:"SOFT" 50;
@@ -664,7 +664,13 @@ section{position:relative;overflow:hidden;padding:0 28px}
   line-height:1.45;
   color:var(--ivory);
   opacity:.7;
+  white-space:normal;
+  overflow:visible;
+  overflow-wrap:anywhere;
+  word-break:normal;
 }
+.dress-info h3{white-space:normal;overflow-wrap:anywhere}
+.dress-card{min-width:0;align-items:center}
 
 /* ============ CLOSING with photo frame ============ */
 .closing{
@@ -976,6 +982,15 @@ body.main-hidden {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+
+/* Function-specific version */
+.haldi,.transition-band,.venue,.dresscode .dress-card:first-of-type{display:none!important}
+
+/* Requested cleanup: hide original photo backgrounds while preserving the invitation theme */
+.hero-bg{display:none!important}
+.photo-frame::before{display:none!important}
+/* Keep invitation text fully visible; no clipping or truncation */
+.dress-info,.dress-info h3,.dress-info p{max-width:100%;text-overflow:clip}
 </style>
 </head>
 <body>
@@ -986,8 +1001,8 @@ body.main-hidden {
 
   <div class="open-wrap">
     <div class="open-label">You're Cordially Invited</div>
-    <div class="open-names">Abhishek <span class="open-amp">&amp;</span> Shipra</div>
-    <div class="open-date-badge">03<em>.</em>05<em>.<em>2026</em></div>
+    <div class="open-names">Bharat <span class="open-amp">&amp;</span> Isha</div>
+    <div class="open-date-badge">23rd November 2026</div>
     <div class="open-divider"></div>
     <button class="open-btn" id="openBtn">Open</button>
   </div>
@@ -1011,11 +1026,11 @@ body.main-hidden {
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-kicker">The Wedding <span></span> Festivities</div>
-    <h1 class="hero-couple">Abhishek</h1>
+    <h1 class="hero-couple">Bharat Goyal</h1>
     <span class="hero-amp">&amp;</span>
-    <h1 class="hero-couple">Shipra</h1>
-    <div class="hero-date-word">Save the Date</div>
-    <div class="hero-date">03<em>.</em>05<em>.<em>2026</em></div>
+    <h1 class="hero-couple">Isha Bansal</h1>
+    <div class="hero-date-word">With the blessings of</div><div style="font-size:clamp(14px,2.8vw,20px);line-height:1.8;color:var(--ivory);margin-top:8px">Sanjeev Kumar &amp; Renu Goyal<br><span style="font-family:serif;font-style:italic">with</span><br>Bhushan Kumar &amp; Rattan Mala</div><div class="hero-date-word" style="margin-top:18px">Sangeet Ceremony</div>
+    <div class="hero-date">23rd November 2026</div>
   </div>
   <div class="hero-bottom">
     <div class="hero-bottom-text">Scroll to unfold</div>
@@ -1025,7 +1040,7 @@ body.main-hidden {
 
 <!-- DIVIDER -->
 <div class="divider">
-  <div class="divider-ornament">Event One</div>
+  <div class="divider-ornament" aria-hidden="true"></div>
 </div>
 
 <!-- HALDI -->
@@ -1039,13 +1054,13 @@ body.main-hidden {
   <div class="carnival-card fade-in stagger">
     <div class="detail-row">
       <span class="detail-label">When</span>
-      <span class="detail-value"><strong>Sunday, 3<sup>rd</sup> May</strong></span>
-      <span class="detail-value" style="font-size:16px;opacity:.75">11:00 am, A mela themed Carnival in the lawns.</span>
+      <span class="detail-value"><strong>Monday, 23<sup>rd</sup> November 2026</strong></span>
+      <span class="detail-value" style="font-size:16px;opacity:.75">11:00 AM</span>
     </div>
     <div class="detail-row">
       <span class="detail-label">Where</span>
-      <span class="detail-value"><strong>Radisson RED</strong></span>
-      <span class="detail-value" style="font-size:15px;opacity:.75;font-style:italic">Mohali</span>
+      <span class="detail-value"><strong>The Lauriant Resorts</strong></span>
+      <span class="detail-value" style="font-size:15px;opacity:.75;font-style:italic">Patiala, Punjab</span>
     </div>
     <div class="detail-row">
       <span class="detail-label">Dress Code</span>
@@ -1065,27 +1080,27 @@ body.main-hidden {
 
 <!-- DIVIDER -->
 <div class="divider" style="background:var(--midnight)">
-  <div class="divider-ornament" style="color:var(--gold-bright)">Event Two</div>
+  <div class="divider-ornament" style="color:var(--gold-bright)" aria-hidden="true"></div>
 </div>
 
 <!-- COCKTAIL -->
 <section class="cocktail">
   <div class="shimmer-field" id="shimmerField"></div>
   <div class="fade-in">
-    <div class="cocktail-kicker">An evening of starlight &amp; celebration</div>
-    <h2 class="cocktail-title">Cocktail<br><em>&amp; Sangeet</em></h2>
-    <p class="cocktail-subtitle">Where the shimmer meets the song</p>
+    <div class="cocktail-kicker">An evening of music, dance &amp; celebration</div>
+    <h2 class="cocktail-title">Sangeet<br><em>Ceremony</em></h2>
+    <p class="cocktail-subtitle">Let the celebrations begin</p>
   </div>
   <div class="luxe-card fade-in stagger">
     <div class="detail-row">
       <span class="detail-label">When</span>
-      <span class="detail-value"><strong>Sunday, 3<sup>rd</sup> May</strong></span>
-      <span class="detail-value" style="font-size:16px;opacity:.75">7:30 pm onwards</span>
+      <span class="detail-value"><strong>Monday, 23<sup>rd</sup> November 2026</strong></span>
+      <span class="detail-value" style="font-size:16px;opacity:.75">07:00 PM</span>
     </div>
     <div class="detail-row">
       <span class="detail-label">Where</span>
-      <span class="detail-value"><strong>Radisson RED</strong></span>
-      <span class="detail-value" style="font-size:15px;opacity:.75;font-style:italic">Mohali</span>
+      <span class="detail-value"><strong>The Lauriant Resorts</strong></span>
+      <span class="detail-value" style="font-size:15px;opacity:.75;font-style:italic">Patiala, Punjab</span>
     </div>
     <div class="detail-row">
       <span class="detail-label">Dress Code</span>
@@ -1099,9 +1114,9 @@ body.main-hidden {
 <section class="venue">
   <div class="fade-in">
     <div class="venue-label">The Venue</div>
-    <h3 class="venue-name">Radisson<em> RED</em></h3>
-    <div class="venue-city">Mohali</div>
-    <a class="map-btn" href="https://maps.app.goo.gl/kVoSJCvHoacWxTJJ7" target="_blank" rel="noopener">
+    <h3 class="venue-name">The Lauriant Resorts</h3>
+    <div class="venue-city">Patiala, Punjab</div>
+    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=The+Lauriant+Resorts+Patiala,+Punjab" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>
       Open in Maps
     </a>
@@ -1113,16 +1128,6 @@ body.main-hidden {
   <div class="fade-in">
     <h3 class="dresscode-heading">What to wear</h3>
     <div class="dresscode-sub">A little guide</div>
-  </div>
-  <div class="dress-card fade-in">
-    <div style="position:relative;flex-shrink:0;width:80px;height:80px;">
-      <div class="dress-swatches haldi-swatches" id="swatchHaldi"></div>
-      <canvas class="swatch-glitter" data-swatch="haldi" style="position:absolute;inset:-14px;width:calc(100% + 28px);height:calc(100% + 28px);pointer-events:none;border-radius:50%;"></canvas>
-    </div>
-    <div class="dress-info">
-      <h3>Haldi Carnival</h3>
-      <p>Vibrant &amp; breezy florals, sunny yellows, Light on your feet.</p>
-    </div>
   </div>
   <div class="dress-card fade-in">
     <div style="position:relative;flex-shrink:0;width:80px;height:80px;">
@@ -1144,8 +1149,8 @@ body.main-hidden {
       <div class="photo-frame-shine"></div>
     </div>
     <div class="closing-script">with love</div>
-    <p class="closing-text">We can't wait to celebrate these moments with you.</p>
-    <div class="closing-initials">A &nbsp;<span style="color:#e8871e;font-size:1.1em;">♥</span>&nbsp; S</div>
+    <p class="closing-text">We look forward to celebrating this special occasion with you.</p>
+    <div class="closing-initials">B &nbsp;<span style="color:#e8871e;font-size:1.1em;">♥</span>&nbsp; I</div>
   </div>
 </section>
 
